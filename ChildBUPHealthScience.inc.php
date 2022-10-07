@@ -27,7 +27,7 @@ class ChildBUPHealthScience extends ThemePlugin {
 	 */
 	public function init() {
 		$this->setParent('healthsciencesthemeplugin');
-		#$this->modifyStyle('stylesheet', array('addLess' => array('styles/remove-borders.less')));
+		$this->modifyStyle('stylesheet', array('addLess' => array('styles/custom.less')));
 	}
 
 	/**
