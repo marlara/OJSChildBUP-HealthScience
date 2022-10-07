@@ -35,7 +35,7 @@ class ChildBUPHealthScience extends ThemePlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return __('Health Sciences Child BUP');
+		return __("plugins.themes.ChildBUP-HealthScience.name");
 	}
 
 	/**
@@ -43,7 +43,7 @@ class ChildBUPHealthScience extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return __('A child theme for BUP journals, based on the Health Sciences Theme');
+		return __("plugins.themes.ChildBUP-HealthScience.description");
 	}
 }
 

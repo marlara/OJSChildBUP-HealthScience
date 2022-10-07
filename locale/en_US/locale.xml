@@ -12,6 +12,6 @@
   -->
 
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.ChildBUPHealthScience.name">Health Science Child BUP</message>
-	<message key="plugins.themes.ChildBUPHealthScience.description">A child theme for BUP journals, based on the Health Sciences Theme.</message>
+	<message key="plugins.themes.ChildBUP-HealthScience.name">Health Science Child BUP</message>
+	<message key="plugins.themes.ChildBUP-HealthScience.description">A child theme for BUP journals, based on the Health Sciences Theme.</message>
 </locale>
