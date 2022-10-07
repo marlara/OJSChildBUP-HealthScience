@@ -24,7 +24,7 @@
 	</div>
 {/if}
 
-<div class="container container-general-homepage"> {* added this container to contain sidebar and issue *}
+<div class="container-general-homepage"> {* added this container to contain sidebar and issue *}
 
     <div class="container container-homepage-issue page-content">
         {if $issue}
@@ -142,7 +142,7 @@
             {call_hook name="Templates::Common::Sidebar"}
         </div>
     </div>
-    
+
 </div>  
 <!-- .container -->
 
