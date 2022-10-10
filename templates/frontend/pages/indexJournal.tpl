@@ -119,13 +119,24 @@
                 <div class="col-12 col-lg-9">
                     {include file="frontend/objects/issue_toc.tpl" sectionHeading="h3"}
                 </div>
+                <div class="col-lg-3 site-footer-sidebar" role="complementary"
+                    aria-label="{translate|escape key="common.navigation.sidebar"}">
+                        {call_hook name="Templates::Common::Sidebar"}
+                </div>
             </div>
+
+            
 
             <div class="text-center">
                 <a class="btn" href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}">
                     {translate key="journal.viewAllIssues"}
                 </a>
             </div>
+        {else}
+        <div class="col-lg-3 site-footer-sidebar" role="complementary"
+                aria-label="{translate|escape key="common.navigation.sidebar"}">
+                {call_hook name="Templates::Common::Sidebar"}
+        </div>
         {/if}
 
         {* Additional Homepage Content *}
@@ -135,13 +146,7 @@
             </div>
         {/if}
     </div>
-
-    <div class="container site-footer-sidebar" role="complementary"
-            aria-label="{translate|escape key="common.navigation.sidebar"}">
-        <div class="row">
-            {call_hook name="Templates::Common::Sidebar"}
-        </div>
-    </div>
+    
 
 </div>  
 <!-- .container -->
