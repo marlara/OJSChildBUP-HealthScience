@@ -11,9 +11,9 @@ msgstr ""
 "PO-Revision-Date: 2022-11-16\n"
 "Language: \n"
 
-msgid "plugins.themes.ChildBUP-Classic.name"
+msgid "plugins.themes.ChildBUP-HealthScience.name"
 msgstr "Health Science Child BUP"
 
-msgid "plugins.themes.ChildBUP-Classic.description"
+msgid "plugins.themes.ChildBUP-HealthScience.description"
 msgstr "A child theme for BUP journals, based on the Health Sciences Theme."
 
