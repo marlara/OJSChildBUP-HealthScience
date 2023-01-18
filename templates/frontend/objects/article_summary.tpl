@@ -22,9 +22,9 @@
    
    <div class="article-summary">
 		{* Article cover image *}
-		{if $article->getLocalizedCoverImage()|escape}
+		{if $article->getLocalizedData('coverImage')}
 			<div class="article-summary-cover">
-			{assign var="coverImage" value=$article->getLocalizedCoverImage()}
+			{assign var="coverImage" value=$article->getLocalizedData('coverImage')}
 			<img
 				class="img-fluid"
 				src="{$article->getLocalizedCoverImageUrl($article->getData('contextId'))|escape}"
