@@ -8,6 +8,7 @@
 	* @brief View of an Article summary which is shown within a list of articles.
 	*
 	* @uses $article Article The article
+	* @uses $publication Publication The publication being displayed
 	* @uses $hasAccess bool Can this user access galleys for this context? The
 	*       context may be an issue or an article
 	* @uses $showDatePublished bool Show the date this article was published?
@@ -22,13 +23,13 @@
    
    <div class="article-summary">
 		{* Article cover image *}
-		{if $article->getLocalizedData('coverImage')|escape}
+		{if $article->getLocalizedCoverImageUrl()}
 			<div class="article-summary-cover">
-			{assign var="coverImage" value=$article->getLocalizedData('coverImage')}
+			{assign var="coverImage" value=$article->getLocalizedCoverImageUrl()}
 			<img
 				class="img-fluid"
-				src="{$article->getLocalizedCoverImageUrl($article->getData('contextId'))|escape}"
-				alt="{$coverImage.altText|escape|default:''}"
+				src="{$coverImage|escape}"
+				{* alt="{$coverImage.altText|escape|default:''}" *}
 					>
 			</div>
 		{/if}
