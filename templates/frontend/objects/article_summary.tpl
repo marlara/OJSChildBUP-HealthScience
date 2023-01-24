@@ -22,7 +22,7 @@
    
    <div class="article-summary">
 		{* Article cover image *}
-		{if $article->getLocalizedData('coverImage')}
+		{if $article->getLocalizedData('coverImage')|escape}
 			<div class="article-summary-cover">
 			{assign var="coverImage" value=$article->getLocalizedData('coverImage')}
 			<img
